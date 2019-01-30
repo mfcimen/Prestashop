@@ -2,6 +2,7 @@ package com.prestashop.tests.pages;
 
 
 import com.prestashop.tests.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -15,7 +16,7 @@ public class RegistrationPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath = "//a[@class='login'] ")
+    @FindBy(css = "a.login")
     public WebElement signIn;
 
     @FindBy(xpath = "//input[@id='email_create']")
@@ -42,7 +43,7 @@ public class RegistrationPage {
     @FindBy(xpath = "//input[@id='city']" )
     public WebElement cityName;
 
-    @FindBy(xpath = "//select[@id='id_state']")
+    @FindBy(id = "id_state")
     public Select selectState;
 
     @FindBy(xpath = "//input[@id='postcode']")
@@ -57,8 +58,14 @@ public class RegistrationPage {
     @FindBy(xpath = "//a[.='My personal information']")
     public WebElement myPersonalInfo;
 
+    @FindBy(xpath = "//a[@class='account']")
+    public WebElement accountInfo;
 
 
+     public void select(String id){
+         selectState = new Select(Driver.getDriver().findElement(By.id(id)));
+
+     }
 
 
 

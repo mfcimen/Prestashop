@@ -1,14 +1,18 @@
 package com.prestashop.tests.utilities;
 
-public class Pages {
-    private LoginPage loginPage;
+import com.prestashop.tests.pages.RegistrationPage;
 
-    public LoginPage login(){
-        if(loginPage== null){
-            loginPage = new LoginPage();
+public class Pages {
+
+    private RegistrationPage registrationPage;
+
+    public RegistrationPage registrationPage(){
+        if(registrationPage== null){
+            registrationPage = new RegistrationPage();
         }
-        return loginPage;
+        return registrationPage;
     }
+
 
 
 

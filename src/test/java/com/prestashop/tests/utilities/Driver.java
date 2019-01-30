@@ -9,11 +9,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class Driver {
+
+    private Driver(){ }
     private static WebDriver driver;
-    private Driver(){
-
-    }
-
     public static WebDriver getDriver(){
         if(driver==null){
             String browser = ConfigurationReader.getProperty("browser");

@@ -5,13 +5,15 @@ import org.openqa.selenium.support.ui.Select;
 public class RegisterInfo extends TestBase {
 
     Faker faker = new Faker();
-    String firstName = faker.name().firstName();
-    String lastName =faker.name().lastName();
-    String passwrd = faker.internet().password();
-    String street =faker.address().streetAddress()+ " "+ faker.address().buildingNumber();
-    String city =faker.address().cityName();
-    int stateNo = 5;
-    String zipCode = faker.address().zipCode().substring(0,5);
-    String cellphone = faker.phoneNumber().cellPhone();
+    protected String firstname = faker.name().firstName();
+    protected String lastName =faker.name().lastName();
+    protected String email = faker.internet().emailAddress();
+    protected String passwrd = faker.internet().password();
+    protected String street =faker.address().streetAddress()+ " "+ faker.address().buildingNumber();
+    protected String city =faker.address().cityName();
+    protected String stateNo = "Texas";
+    protected String zipCode = faker.address().zipCode().substring(0,5);
+    protected String cellphone = faker.phoneNumber().cellPhone();
+    protected String first_Last_Names= firstname+ " "+ lastName;
 
 }
