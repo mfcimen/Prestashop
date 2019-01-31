@@ -63,6 +63,12 @@ public class RegistrationPage {
     @FindBy(id = "SubmitLogin")
     public WebElement loginButton;
 
+    @FindBy(xpath = "//body[@id='authentication']/div/div/div/div/div/div/ol/li")
+        public WebElement errorMessage;
+
+
+
+
      public void select(String id){
          selectState = new Select(Driver.getDriver().findElement(By.id(id)));
 

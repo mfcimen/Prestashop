@@ -23,4 +23,6 @@ public class LoginPage {
     @FindBy(xpath = "//a[@class='account']")
     public WebElement accountInfo;
 
+
+
 }

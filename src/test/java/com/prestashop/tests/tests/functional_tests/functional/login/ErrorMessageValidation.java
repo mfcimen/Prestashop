@@ -1,59 +1,67 @@
 package com.prestashop.tests.tests.functional_tests.functional.login;
 
 import com.github.javafaker.Faker;
+import com.prestashop.tests.utilities.RegisterInfo;
 import com.prestashop.tests.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ErrorMessageValidation extends TestBase {
-    Faker faker = new Faker();
+public class ErrorMessageValidation extends RegisterInfo {
+
+
     @Test
-    public void errorMessageValidationFirstName() {
+    public void errorValidationTest() throws InterruptedException {
 //        1. Openbrowser
-//        2. Gotohttp://automationpractice.com/index.php
+//        2. Goto http://automationpractice.com/index.php
 //        3. ClickSigninlink
-        driver.findElement(By.xpath("//a[@class='login']")).click();
+        pages.registrationPage().signIn.click();
+
 //        4. Enter new valid email to the email field
-        String email = faker.internet().emailAddress();
-        driver.findElement(By.xpath("//input[@id='email_create']")).sendKeys(email);
+        pages.registrationPage().email.sendKeys(email);
+        System.out.println(email);
+
 //        5. ClickonCreateAccount
-        driver.findElement(By.xpath("//button[@id='SubmitCreate']")).click();
-//        6. Fillalltherequiredstepsexceptforfirstname
+        pages.registrationPage().createAccountBtn.click();
+        Thread.sleep(3000);
+//        6. Verifythatthatemaillinkdisplayscurrentemail
+        //   pages.registrationPage().emailLinkDisplays.isDisplayed();
+
+//        7 6. Fillalltherequiredstepsexceptforfirstname
+     //   pages.registrationPage().firstName.sendKeys(firstname);
+        pages.registrationPage().lastName.sendKeys(lastname);
 
 
-//        String firstName =faker.name().firstName();
-//        driver.findElement(By.xpath("//input[@id='customer_firstname']")).sendKeys(firstName);
+        pages.registrationPage().password.sendKeys(passwrd);
 
-        String lastName =faker.name().lastName();
-        driver.findElement(By.xpath("//input[@id='customer_lastname']")).sendKeys(lastName);
+//        driver.findElement(By.xpath("//input[@id='firstname']")).sendKeys(firstName);
+//        driver.findElement(By.xpath("//input[@id='lastname']")).sendKeys(lastName);
 
-        String passwrd = faker.internet().password();
-        driver.findElement(By.xpath("//input[@id='passwd']")).sendKeys(passwrd);
+        pages.registrationPage().streetAddress.sendKeys(street);
+        pages.registrationPage().cityName.sendKeys(city);
 
-      //  driver.findElement(By.xpath("//input[@id='firstname']")).sendKeys(firstName);
-        driver.findElement(By.xpath("//input[@id='lastname']")).sendKeys(lastName);
+        Thread.sleep(3000);
 
-        String street =faker.address().streetAddress()+ " "+ faker.address().buildingNumber();
-        driver.findElement(By.xpath("//input[@id='address1']")).sendKeys(street);
+        pages.registrationPage().select("id_state");
+        pages.registrationPage().selectState.selectByVisibleText(stateNo);
+        pages.registrationPage().selectState.getFirstSelectedOption().getText();
 
-        String city =faker.address().cityName();
-        driver.findElement(By.xpath("//input[@id='city']")).sendKeys(city);
+        pages.registrationPage().zipCode.sendKeys(zipCode);
+        pages.registrationPage().cellPhone.sendKeys(cellphone);
 
-        Select select = new Select(driver.findElement(By.xpath("//select[@id='id_state']")));
-        select.selectByValue("5");
+        //        8. ClickonRegister
+        pages.registrationPage().registerButton.click();
 
-      //  String california=select.getFirstSelectedOption().getText();
+        //     8. Verifythaterrormessagefirstnameisrequired.isdisplayed
 
-        String zipCode = faker.address().zipCode().substring(0,5);
-        driver.findElement(By.xpath("//input[@id='postcode']")).sendKeys(zipCode);
+        Assert.assertEquals(pages.registrationPage().errorMessage.getText(), "firstname is required.");
 
-        String cellphone = faker.phoneNumber().cellPhone();
-        driver.findElement(By.xpath("//input[@id='phone_mobile']")).sendKeys(cellphone);
-//        7. ClickonRegister
-        driver.findElement(By.xpath("//button[@id='submitAccount']")).click();
-//        8. Verifythaterrormessagefirstnameisrequired.isdisplayed
-        Assert.assertEquals(driver.findElement(By.xpath("//body[@id='authentication']/div/div/div/div/div/div/ol/li")).getText(), "firstname is required.");
+
+
     }
+
+
+
+
 }

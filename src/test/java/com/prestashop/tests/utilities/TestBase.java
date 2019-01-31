@@ -30,6 +30,14 @@ public abstract class TestBase {
         softAssert.assertAll();
     }
 
+
+    public void login(String email, String passwrd) {
+        pages.registrationPage().signIn.click();
+        pages.loginPage().loginEmail.sendKeys(email);
+        pages.loginPage().loginPasswrd.sendKeys(passwrd);
+        pages.registrationPage().loginButton.click();
+    }
+
     //random number generator
     public static int randomNumber(int start, int end) {
         return start + (int) (Math.random() * (end - start + 1));

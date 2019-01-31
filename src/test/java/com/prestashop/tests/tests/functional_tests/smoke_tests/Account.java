@@ -19,11 +19,15 @@ public class Account extends TestBase {
     public void url() {
         driver.get("http://automationpractice.com/index.php");
     }
+
+
+
+
     @Test(priority = 0)
     public void loginMyAccount() throws InterruptedException {
        driver.findElement(By.xpath("//a[@class='login']")).click();
 
-       WebElement email = driver.findElement(By.xpath("//input[@id='email']"));
+        WebElement email = driver.findElement(By.xpath("//input[@id='email']"));
         email.sendKeys(myEmail);
         WebElement passwd = driver.findElement(By.xpath("//input[@id='passwd']"));
         passwd.sendKeys(myPasswrd);

@@ -17,7 +17,6 @@ public class RegistrationTests extends RegisterInfo {
 
 //        4. Enter new valid email to the email field
         pages.registrationPage().email.sendKeys(email);
-        System.out.println(email);
 
 //        5. ClickonCreateAccount
         pages.registrationPage().createAccountBtn.click();
@@ -63,11 +62,7 @@ public class RegistrationTests extends RegisterInfo {
 
     @Test (dependsOnMethods = "RegistrationTest")
     public void myPersonalInfo() throws InterruptedException {
-
-        pages.registrationPage().signIn.click();
-        pages.loginPage().loginEmail.sendKeys(email);
-        pages.loginPage().loginPasswrd.sendKeys(passwrd);
-        pages.registrationPage().loginButton.click();
+        login(email,passwrd);
 
 
         //        10. Click on My personal information
