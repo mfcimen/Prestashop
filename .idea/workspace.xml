@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d5981a8-f844-4d92-b97b-d8a521d6ca62" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/MyPersonalInfoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/myAccountPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/MyAccountTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/RegistrationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/Pages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/RegisterInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/RegisterInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/TestBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/prestashop/tests/pages/RegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/prestashop/tests/pages/RegistrationPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/prestashop/tests/pages/myAccountPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/prestashop/tests/tests/functional_tests/functional/login/MyAccountTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/prestashop/tests/tests/functional_tests/functional/login/RegistrationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/prestashop/tests/tests/functional_tests/functional/login/RegistrationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/prestashop/tests/utilities/Pages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/prestashop/tests/utilities/Pages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/prestashop/tests/utilities/RegisterInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/prestashop/tests/utilities/RegisterInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/prestashop/tests/utilities/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/prestashop/tests/utilities/TestBase.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +52,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12958" />
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="JAVA" value="15189" />
+          <entry key="PLAIN_TEXT" value="63" />
           <entry key="Properties" value="66" />
           <entry key="XML" value="14" />
         </counts>
@@ -58,8 +68,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="5" />
-          <entry key="JAVA" value="112" />
-          <entry key="Properties" value="4" />
+          <entry key="JAVA" value="137" />
+          <entry key="Properties" value="5" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
@@ -70,20 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/RegistrationPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/Driver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+            <state relative-caret-position="885">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="19" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="19" />
+            <state relative-caret-position="525">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,10 +102,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/RegisterInfo.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+            <state relative-caret-position="360">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,40 +114,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/Pages.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/ErrorMessageValidation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/RegistrationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="60" column="106" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="106" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/MyAccountTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="345">
+              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/myAccountPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/MyPersonalInfoPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="168">
+              <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
+                <element signature="e#457#458#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,6 +144,14 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>myPersonalInfoPage()</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>registrationPage()</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -187,14 +177,19 @@
         <option value="$USER_HOME$/Documents/TestNG-GitHub/WebOrders/src/test/java/utilities/TestBase2.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/WONegativeLoginTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/ConfigurationReader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/Pages.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/Driver.java" />
         <option value="$PROJECT_DIR$/configuration.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/MyAccountTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/myPersonalInfoPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/Pages.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/RegisterInfo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/MyPersonalInfoTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/RegistrationPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/RegistrationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/LoginTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/MyPersonalInfoPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/RegistrationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/LoginPage.java" />
       </list>
     </option>
   </component>
@@ -205,11 +200,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1920" />
-    <option name="y" value="-123" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -328,7 +322,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548863387716" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548953196467" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -351,34 +345,36 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.RegistrationTests.RegistrationTest">
-    <configuration name="CartDetails" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.RegistrationTests">
+    <configuration name="LoginTests.LoginTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Prestashop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.prestashop.tests.tests.functional_tests.functional.order.*" />
+          <option name="PATTERN" value="com.prestashop.tests.tests.functional_tests.functional.login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.functional_tests" />
-      <option name="MAIN_CLASS_NAME" value="com.prestashop.tests.tests.functional_tests.functional.order.CartDetails" />
+      <option name="PACKAGE_NAME" value="com.prestashop.tests.tests.functional_tests.functional.login" />
+      <option name="MAIN_CLASS_NAME" value="com.prestashop.tests.tests.functional_tests.functional.login.LoginTests" />
+      <option name="METHOD_NAME" value="LoginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ErrorMessageValidation.errorMessageValidationFirstName" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MyPersonalInfoTests.myPersonalInfo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Prestashop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.prestashop.tests.tests.functional_tests.functional.order.*" />
+          <option name="PATTERN" value="com.prestashop.tests.tests.functional_tests.functional.login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.functional_tests" />
-      <option name="MAIN_CLASS_NAME" value="com.prestashop.tests.tests.functional_tests.functional.login.ErrorMessageValidation" />
-      <option name="METHOD_NAME" value="errorMessageValidationFirstName" />
+      <option name="PACKAGE_NAME" value="com.prestashop.tests.tests.functional_tests.functional.login" />
+      <option name="MAIN_CLASS_NAME" value="com.prestashop.tests.tests.functional_tests.functional.login.MyPersonalInfoTests" />
+      <option name="METHOD_NAME" value="myPersonalInfo" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -420,17 +416,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WONegativeLoginTests.wrongUsername" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistrationTests.myPersonalInfo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Prestashop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.prestashop.tests.tests.functional_tests.functional.order.*" />
+          <option name="PATTERN" value="com.prestashop.tests.tests.functional_tests.functional.login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.functional_tests" />
-      <option name="MAIN_CLASS_NAME" value="com.prestashop.tests.tests.functional_tests.functional.login.WONegativeLoginTests" />
-      <option name="METHOD_NAME" value="wrongUsername" />
+      <option name="PACKAGE_NAME" value="com.prestashop.tests.tests.functional_tests.functional.login" />
+      <option name="MAIN_CLASS_NAME" value="com.prestashop.tests.tests.functional_tests.functional.login.RegistrationTests" />
+      <option name="METHOD_NAME" value="myPersonalInfo" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -439,19 +435,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.WONegativeLoginTests.wrongUsername" />
-      <item itemvalue="TestNG.ErrorMessageValidation.errorMessageValidationFirstName" />
-      <item itemvalue="TestNG.CartDetails" />
       <item itemvalue="TestNG.RegistrationTests.RegistrationTest" />
       <item itemvalue="TestNG.RegistrationTests" />
+      <item itemvalue="TestNG.LoginTests.LoginTest" />
+      <item itemvalue="TestNG.MyPersonalInfoTests.myPersonalInfo" />
+      <item itemvalue="TestNG.RegistrationTests.myPersonalInfo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RegistrationTests.RegistrationTest" />
         <item itemvalue="TestNG.RegistrationTests" />
-        <item itemvalue="TestNG.ErrorMessageValidation.errorMessageValidationFirstName" />
-        <item itemvalue="TestNG.WONegativeLoginTests.wrongUsername" />
-        <item itemvalue="TestNG.CartDetails" />
+        <item itemvalue="TestNG.RegistrationTests.RegistrationTest" />
+        <item itemvalue="TestNG.RegistrationTests.myPersonalInfo" />
+        <item itemvalue="TestNG.MyPersonalInfoTests.myPersonalInfo" />
+        <item itemvalue="TestNG.LoginTests.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -469,42 +465,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RegistrationTests_RegistrationTest - 2019.01.29 at 20h 07m 21s.xml">
+    <history-entry file="RegistrationTests - 2019.01.30 at 16h 08m 08s.xml">
+      <configuration name="RegistrationTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RegistrationTests - 2019.01.30 at 16h 11m 30s.xml">
+      <configuration name="RegistrationTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RegistrationTests_RegistrationTest - 2019.01.30 at 16h 19m 13s.xml">
       <configuration name="RegistrationTests.RegistrationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTests_RegistrationTest - 2019.01.30 at 09h 39m 51s.xml">
-      <configuration name="RegistrationTests.RegistrationTest" configurationId="TestNG" />
+    <history-entry file="RegistrationTests - 2019.01.30 at 16h 20m 11s.xml">
+      <configuration name="RegistrationTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTests_RegistrationTest - 2019.01.30 at 09h 53m 37s.xml">
-      <configuration name="RegistrationTests.RegistrationTest" configurationId="TestNG" />
+    <history-entry file="RegistrationTests - 2019.01.30 at 16h 22m 33s.xml">
+      <configuration name="RegistrationTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTests_RegistrationTest - 2019.01.30 at 09h 57m 29s.xml">
-      <configuration name="RegistrationTests.RegistrationTest" configurationId="TestNG" />
+    <history-entry file="RegistrationTests - 2019.01.30 at 16h 24m 36s.xml">
+      <configuration name="RegistrationTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTests_RegistrationTest - 2019.01.30 at 10h 00m 17s.xml">
-      <configuration name="RegistrationTests.RegistrationTest" configurationId="TestNG" />
+    <history-entry file="RegistrationTests - 2019.01.30 at 16h 26m 29s.xml">
+      <configuration name="RegistrationTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTests_RegistrationTest - 2019.01.30 at 10h 01m 44s.xml">
-      <configuration name="RegistrationTests.RegistrationTest" configurationId="TestNG" />
+    <history-entry file="RegistrationTests - 2019.01.30 at 16h 28m 15s.xml">
+      <configuration name="RegistrationTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTests_RegistrationTest - 2019.01.30 at 10h 04m 40s.xml">
-      <configuration name="RegistrationTests.RegistrationTest" configurationId="TestNG" />
+    <history-entry file="RegistrationTests - 2019.01.30 at 16h 32m 32s.xml">
+      <configuration name="RegistrationTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTests_RegistrationTest - 2019.01.30 at 10h 08m 04s.xml">
-      <configuration name="RegistrationTests.RegistrationTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RegistrationTests_RegistrationTest - 2019.01.30 at 10h 09m 36s.xml">
-      <configuration name="RegistrationTests.RegistrationTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RegistrationTests_RegistrationTest - 2019.01.30 at 10h 44m 46s.xml">
-      <configuration name="RegistrationTests.RegistrationTest" configurationId="TestNG" />
+    <history-entry file="RegistrationTests - 2019.01.30 at 16h 35m 12s.xml">
+      <configuration name="RegistrationTests" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="-123" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1" y="23" width="1920" height="1057" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25985092" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19169329" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -513,12 +508,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32928064" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15298885" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39915073" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.42350557" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.41401273" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32928064" />
@@ -532,7 +527,7 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18690096" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19169329" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -541,12 +536,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32928064" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38196555" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.11854103" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39915073" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.42350557" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.1550152" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32928064" />
@@ -598,13 +593,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/PositiveLoginTests.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/WONegativeLoginTests.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/ErrorMessageValidation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/order/CartDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -612,13 +600,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/smoke_tests/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="41" column="76" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -663,13 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configuration.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -677,44 +651,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/configuration.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/Pages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/RegisterInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/RegistrationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/MyPersonalInfoTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="60" column="106" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="106" />
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/MyAccountTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/LoginTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/RegistrationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        <state relative-caret-position="135">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -723,8 +690,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        <state relative-caret-position="549">
+          <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -733,18 +700,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="19" />
+        <state relative-caret-position="525">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/myAccountPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/RegistrationPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="885">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/RegistrationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/smoke_tests/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" selection-start-line="29" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/utilities/RegisterInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/tests/functional_tests/functional/login/ErrorMessageValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/prestashop/tests/pages/MyPersonalInfoPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

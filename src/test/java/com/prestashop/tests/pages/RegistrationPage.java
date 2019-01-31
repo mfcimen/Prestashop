@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import java.security.cert.X509Certificate;
 
 public class RegistrationPage {
 
@@ -55,12 +54,14 @@ public class RegistrationPage {
     @FindBy(xpath = "//button[@id='submitAccount']")
     public WebElement registerButton;
 
-    @FindBy(xpath = "//a[.='My personal information']")
-    public WebElement myPersonalInfo;
-
     @FindBy(xpath = "//a[@class='account']")
     public WebElement accountInfo;
 
+    @FindBy(xpath = "//a[@class='logout']")
+    public WebElement logOut;
+
+    @FindBy(id = "SubmitLogin")
+    public WebElement loginButton;
 
      public void select(String id){
          selectState = new Select(Driver.getDriver().findElement(By.id(id)));

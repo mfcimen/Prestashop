@@ -2,15 +2,13 @@ package com.prestashop.tests.tests.functional_tests.functional.login;
 
 
 import com.prestashop.tests.utilities.RegisterInfo;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class RegistrationTests extends RegisterInfo {
 
 
-    @Test
+    @Test (priority = 0)
     public void RegistrationTest() throws InterruptedException {
 //        1. Openbrowser
 //        2. Goto http://automationpractice.com/index.php
@@ -19,6 +17,7 @@ public class RegistrationTests extends RegisterInfo {
 
 //        4. Enter new valid email to the email field
         pages.registrationPage().email.sendKeys(email);
+        System.out.println(email);
 
 //        5. ClickonCreateAccount
         pages.registrationPage().createAccountBtn.click();
@@ -28,7 +27,9 @@ public class RegistrationTests extends RegisterInfo {
 
 //        7. Filloutalltherequiredsteps
         pages.registrationPage().firstName.sendKeys(firstname);
-        pages.registrationPage().lastName.sendKeys(lastName);
+        pages.registrationPage().lastName.sendKeys(lastname);
+
+
         pages.registrationPage().password.sendKeys(passwrd);
 
 //        driver.findElement(By.xpath("//input[@id='firstname']")).sendKeys(firstName);
@@ -36,6 +37,7 @@ public class RegistrationTests extends RegisterInfo {
 
         pages.registrationPage().streetAddress.sendKeys(street);
         pages.registrationPage().cityName.sendKeys(city);
+
         Thread.sleep(3000);
 
         pages.registrationPage().select("id_state");
@@ -54,42 +56,65 @@ public class RegistrationTests extends RegisterInfo {
         Assert.assertEquals(pages.registrationPage().
                 accountInfo.getText(),first_Last_Names,"the name doesnt match");
 
+        pages.registrationPage().logOut.click();
+
+    }
+
+
+    @Test (dependsOnMethods = "RegistrationTest")
+    public void myPersonalInfo() throws InterruptedException {
+
+        pages.registrationPage().signIn.click();
+        pages.loginPage().loginEmail.sendKeys(email);
+        pages.loginPage().loginPasswrd.sendKeys(passwrd);
+        pages.registrationPage().loginButton.click();
+
+
         //        10. Click on My personal information
-        pages.registrationPage().myPersonalInfo.click();
-
+        pages.myPersonalInfoPage().myPersonalInfoButton.click();
         //        11. Verify that personal information is displayed correctly
-        Assert.assertEquals(driver.findElement(By.xpath("//input[@id='firstname']")).getAttribute("value"), firstname);
-        Assert.assertEquals(driver.findElement(By.xpath("//input[@id='lastname']")).getAttribute("value"), lastName);
-        Assert.assertEquals(driver.findElement(By.xpath("//input[@id='email']")).getAttribute("value"), email);
-
+        Assert.assertEquals(pages.myPersonalInfoPage().firstName.getAttribute("value"),firstname);
+        Assert.assertEquals(pages.myPersonalInfoPage().lastName.getAttribute("value"),lastname);
+        Assert.assertEquals(pages.myPersonalInfoPage().email.getAttribute("value"),email);
         //        12. Click on Back to your account
-        driver.findElement(By.xpath("(//a[@class='btn btn-default button button-small'])[2]")).click();
+        pages.myPersonalInfoPage().backToYourAccountBtn.click();
 
         //        13. Click on My addresses verify that address information is displayed  correctly
-        driver.findElement(By.xpath("//a[.='My addresses']")).click();
-        Assert.assertEquals(driver.findElement(By.xpath("//span[@class='address_address1']")).getText(), street);
-        String addressConfirm = driver.findElement(By.xpath("(//ul[@class='last_item item box']/li)[5]/span")).getText();
-        Assert.assertEquals(addressConfirm.substring(0,addressConfirm.length()-1), city);
-        Assert.assertEquals(driver.findElement(By.xpath("((//ul[@class='last_item item box']/li)[5]/span)[2]")).getText(),
-                pages.registrationPage().selectState.getFirstSelectedOption().getText());
+        pages.myPersonalInfoPage().myAddressBtn.click();
+
+        Assert.assertEquals(pages.myPersonalInfoPage().streetDsplyd.getText(),street);
+
+
+        Assert.assertEquals(pages.myPersonalInfoPage().city.getText().replace(",","").trim(),city);
+        Assert.assertEquals(pages.myPersonalInfoPage().streetDsplyd.getText(),street);
         //zipcode
 
-        Assert.assertEquals(driver.findElement(By.xpath("((//ul[@class='last_item item box']/li)[5]/span)[3]")).getText(),zipCode);
+        Assert.assertEquals(pages.myPersonalInfoPage().zipCodeDsplyd.getText(), zipCode);
         //country
-        Assert.assertEquals(driver.findElement(By.xpath("((//ul[@class='last_item item box']/li)[6]/span)")).getText(),"United States");
+        Assert.assertEquals(pages.myPersonalInfoPage().countryDsplyd.getText(),"United States");
         //mobile number
-        Assert.assertEquals(driver.findElement(By.xpath("((//ul[@class='last_item item box']/li)[8]/span)")).getText(),cellphone);
+        Assert.assertEquals(pages.myPersonalInfoPage().phoneNumberDsplyd.getText(),cellphone);
 //        14. Click on sign out link
-        driver.findElement(By.xpath("//a[@class='logout']")).click();
-//        15. Login using the email and password if the current user
-        driver.findElement(By.xpath("//input[@id='email']")).sendKeys(email);
-        driver.findElement(By.xpath("//input[@id='passwd']")).sendKeys(passwrd);
-        driver.findElement(By.xpath("//button[@id='SubmitLogin']")).click();
-//        16. Verify that correct first and last name is displayed correctly on top right
-        Assert.assertEquals(driver.findElement(By.xpath("//div[@class='header_user_info']/a/span")).getText(), first_Last_Names);
+        pages.myPersonalInfoPage().singOutLink.click();
+
 
 
     }
+
+    @Test(priority = 1)
+    public void LoginTest(){
+
+        //        15. Login using the email and password if the current user
+        pages.registrationPage().signIn.click();
+        pages.loginPage().loginEmail.sendKeys(email);
+        pages.loginPage().loginPasswrd.sendKeys(passwrd);
+        pages.loginPage().submitBtn.click();
+
+//        16. Verify that correct first and last name is displayed correctly on top right
+        Assert.assertEquals(pages.myPersonalInfoPage().accountInfo.getText(),first_Last_Names,"the name doesnt match");
+
+    }
+
 
 
 }

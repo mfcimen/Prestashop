@@ -25,8 +25,8 @@ public abstract class TestBase {
 
     @AfterMethod
     public void tearDown() throws InterruptedException {
-       Thread.sleep(4000);
-        Driver.closeDriver();
+       Thread.sleep(8000);
+       // Driver.closeDriver();
         softAssert.assertAll();
     }
 
