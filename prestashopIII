@@ -1,0 +1,40 @@
+Functional Test Cases
+Automate the following test cases under the cart package. Cart Login Test
+1. Openbrowser
+2. Gotohttp://automationpractice.com/index.php
+3. Addanyproductinthehomepagetothecart
+4. Hoveroverthecarticon.
+5. Verifythatcartcontainstheproduct
+6. Loginasanyvaliduser
+7. Hoveroverthecarticon
+8. Verifythatcartinformationissameasstep5
+Cart Logout Test
+1. Openbrowser
+2. Gotohttp://automationpractice.com/index.php
+3. Loginasanyvaliduser
+4. Gobacktohomepage
+5. Addanyproductinthehomepagetothecart
+6. Hoveroverthecarticon
+7. Verifythatcartcontainstheproduct
+8. Logout
+9. Verifythecartcontainsthewordempty
+Cart Icon Delete Test
+1. Openbrowser
+2. Gotohttp://automationpractice.com/index.php
+3. Addanyproductinthehomepagetothecart
+4. ClickonContinueshopping
+5. Hoveroverthecarticon
+6. Clickthextodeletetheproduct
+7. VerifywordemptyisdisplayedintheCarticon
+Cart Checkout Delete Test
+1. Openbrowser
+2. Gotohttp://automationpractice.com/index.php
+3. Addanyproductinthehomepagetothecart
+4. ClickonContinueshopping
+5. Addanotherproductinthehomepagetothecart
+6. ClickonProceedtocheckout
+7. VerifymessageYourshoppingcartcontains:2Products
+8. Clickthedeleteicontodeleteoneoftheproducts
+9. VerifymessageYourshoppingcartcontains:1Product
+10.Click the delete icon to delete the second product
+11. Verify message Your shopping cart is empty
