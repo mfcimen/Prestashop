@@ -71,7 +71,7 @@ public class CartTest extends RegisterInfo {
 
 //        wait.until(ExpectedConditions.visibilityOf(pages.cartPage().productInCart));
 //        7. Verifythatcartcontainstheproduct
-        if(productBefore.contains( pages.cartPage().productInCart.getAttribute("innerText")) );
+        Assert.assertTrue(productBefore.contains( pages.cartPage().productInCart.getAttribute("innerText")) );
 //        8. Logout
         pages.registrationPage().logOut.click();
 //        9. Verifythecartcontainsthewordempty
@@ -101,6 +101,40 @@ public class CartTest extends RegisterInfo {
         pages.cartPage().removeIcon.click();
 //        7. VerifywordemptyisdisplayedintheCarticon
         wait.until(ExpectedConditions.visibilityOf(pages.cartPage().emptyCart));
+        Assert.assertTrue( pages.cartPage().emptyCart.isDisplayed() );
+
+    }
+
+    @Test
+    public void verifyItemCounts() throws InterruptedException {
+        action = new Actions(driver);
+//        1. Openbrowser
+//        2. Gotohttp://automationpractice.com/index.php
+//        3. Addanyproductinthehomepagetothecart
+        action.moveToElement(pages.cartPage().anyProductImg).build().perform();
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 15);
+        wait.until(ExpectedConditions.visibilityOf(pages.cartPage().addItQuick));
+        pages.cartPage().addItQuick.click();
+//        4. ClickonContinueshopping
+        pages.cartPage().continueShopping.click();
+//        5. Addanotherproductinthehomepagetothecart
+        action.moveToElement(pages.cartPage().anyProductImg2).build().perform();
+
+        wait.until(ExpectedConditions.visibilityOf(pages.cartPage().addItQuick2));
+        pages.cartPage().addItQuick2.click();
+
+//        6. ClickonProceedtocheckout
+        pages.cartPage().proceedToCheckout.click();
+//        7. VerifymessageYourshoppingcartcontains:2Products
+        Assert.assertEquals(pages.cartPage().cartQuantity.getAttribute("innerText"), "2");
+//        8. Clickthedeleteicontodeleteoneoftheproducts
+        pages.cartPage().deleteIcon.click();
+//        9. VerifymessageYourshoppingcartcontains:1Product
+        Thread.sleep(2000);
+        Assert.assertEquals(pages.cartPage().cartQuantity.getAttribute("innerText"), "1");
+//        10.Click the delete icon to delete the second product
+        pages.cartPage().deleteIcon.click();
+//        11. Verify message Your shopping cart is empty
         Assert.assertTrue( pages.cartPage().emptyCart.isDisplayed() );
 
     }

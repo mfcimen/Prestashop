@@ -68,8 +68,13 @@ public class CartPage {
     @FindBy(xpath = "(//a[@class='button ajax_add_to_cart_button btn btn-default'])[3]/span")
     public WebElement addItQuick;
 
+    @FindBy(xpath = "(//a[@class='button ajax_add_to_cart_button btn btn-default'])[2]/span")
+    public WebElement addItQuick2;
+
     @FindBy(xpath = "(//img[@class='replace-2x img-responsive'])[3]")
     public WebElement anyProductImg;
+    @FindBy(xpath = "(//img[@class='replace-2x img-responsive'])[2]")
+    public WebElement anyProductImg2;
 
     @FindBy(xpath = "(//a[@title='Printed Summer Dress'])[1]")
     public WebElement productInCart;
@@ -82,6 +87,15 @@ public class CartPage {
 
     @FindBy(xpath = "//a[@class='ajax_cart_block_remove_link']")
     public WebElement removeIcon;
+
+    @FindBy(xpath = "//a[@title='Proceed to checkout']")
+    public WebElement proceedToCheckout;
+
+    @FindBy(xpath = "(//span[@class='ajax_cart_quantity'])[1]")
+    public WebElement cartQuantity;
+
+    @FindBy(xpath = "(//a[@title='Delete'])[1]")
+    public WebElement deleteIcon;
 
 
 
