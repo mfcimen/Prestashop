@@ -19,8 +19,8 @@ public class Product extends TestBase {
     public void price(){
         WebElement dress3 = pages.productPage().dress3;
 
-         name3BeforeClick =  pages.productPage().name3BeforeClick.getAttribute("innerText");
-         price3BeforeClick = pages.productPage().price3BeforeClick.getAttribute("innerText");
+        name3BeforeClick =  pages.productPage().name3BeforeClick.getAttribute("innerText");
+        price3BeforeClick = pages.productPage().price3BeforeClick.getAttribute("innerText");
         System.out.println(name3BeforeClick);
         System.out.println(price3BeforeClick);
 

@@ -1,4 +1,4 @@
-package com.prestashop.tests.functional_tests.functional.order;
+package com.prestashop.tests.functional_tests.functional.cart;
 
 import com.prestashop.utilities.Driver;
 import com.prestashop.utilities.RegisterInfo;

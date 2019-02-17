@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
+
 public class CartPage {
 
     public CartPage() {
@@ -13,6 +15,9 @@ public class CartPage {
     }
 
     @FindBy(xpath = "(//a[@title='Printed Summer Dress'])[4]")
+    public WebElement anyProduct4;
+
+    @FindBy(xpath = "//a[@class='cart_block_product_name']")
     public WebElement anyProduct;
 
     @FindBy(id = "quantity_wanted")
@@ -59,6 +64,24 @@ public class CartPage {
 
     @FindBy(xpath = "//span[.='Total']")
     public WebElement cartDropDown;
+
+    @FindBy(xpath = "(//a[@class='button ajax_add_to_cart_button btn btn-default'])[3]/span")
+    public WebElement addItQuick;
+
+    @FindBy(xpath = "(//img[@class='replace-2x img-responsive'])[3]")
+    public WebElement anyProductImg;
+
+    @FindBy(xpath = "(//a[@title='Printed Summer Dress'])[1]")
+    public WebElement productInCart;
+
+    @FindBy(xpath = "//span[@class='ajax_cart_no_product']")
+    public WebElement emptyCart;
+
+    @FindBy(xpath = "//span[@title='Continue shopping']")
+    public WebElement continueShopping;
+
+    @FindBy(xpath = "//a[@class='ajax_cart_block_remove_link']")
+    public WebElement removeIcon;
 
 
 

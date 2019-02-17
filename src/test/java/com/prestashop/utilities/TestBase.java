@@ -29,7 +29,7 @@ public abstract class TestBase {
 
     @AfterMethod
     public void tearDown() throws InterruptedException {
-       Thread.sleep(8000);
+
      //  Driver.closeDriver();
        softAssert.assertAll();
     }
@@ -42,6 +42,8 @@ public abstract class TestBase {
         pages.registrationPage().loginButton.click();
 
     }
+
+
 
 
 
